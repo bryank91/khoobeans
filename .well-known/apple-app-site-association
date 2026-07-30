@@ -5,7 +5,7 @@
       {
         "appIDs": ["VT8D499877.com.bryankho.HealthBeans"],
         "components": [
-          { "/": "/healthbeans/meal" }
+          { "/": "/khoobeans/healthbeans/meal" }
         ]
       },
       {
