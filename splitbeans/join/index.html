@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join a SplitBeans trip</title>
+  <meta name="description" content="Open this SplitBeans trip invite in the app.">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <main>
+    <h1><span class="wordmark">SplitBeans</span></h1>
+    <p class="subtitle">You've been invited to a trip.</p>
+
+    <p id="status">Opening SplitBeans…</p>
+
+    <h2>If the app doesn't open</h2>
+    <ul>
+      <li>Make sure SplitBeans is installed on this device.</li>
+      <li>Or copy the invite link below, then in SplitBeans go to
+        <strong>Trips → + → Join Trip → Paste from Clipboard</strong>.</li>
+    </ul>
+
+    <div class="contact-block">
+      <div class="muted" style="font-size: 14px;">Invite link</div>
+      <div id="invite-url" style="word-break: break-all; font-size: 14px;"></div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <span>© 2026 Khoobeans</span>
+        <span><a href="mailto:bryank1991@hotmail.com">bryank1991@hotmail.com</a></span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Deep-link into the app via the custom scheme. When the universal-link
+    // association is picked up by iOS this page is bypassed entirely; it only
+    // shows for people without the app (or before the AASA propagates).
+    var query = window.location.search;
+    document.getElementById("invite-url").textContent = window.location.href;
+    if (query.indexOf("trip=") !== -1 && query.indexOf("token=") !== -1) {
+      window.location.href = "splitbeans://join" + query;
+    } else {
+      document.getElementById("status").textContent = "This invite link is malformed.";
+    }
+  </script>
+</body>
+</html>

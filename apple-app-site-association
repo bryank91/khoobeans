@@ -7,6 +7,12 @@
         "components": [
           { "/": "/healthbeans/meal" }
         ]
+      },
+      {
+        "appIDs": ["VT8D499877.app.splitbeans.SplitBeans"],
+        "components": [
+          { "/": "/khoobeans/splitbeans/join" }
+        ]
       }
     ]
   }
