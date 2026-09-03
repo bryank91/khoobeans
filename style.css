@@ -189,6 +189,12 @@ p { margin: 0 0 14px; }
   font-size: 13px;
 }
 
+.section-link {
+  color: #8fa099;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .app-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -229,24 +235,17 @@ p { margin: 0 0 14px; }
 
 .app-icon {
   position: relative;
-  display: grid;
-  width: 48px;
-  height: 48px;
+  display: block;
+  width: 56px;
+  height: 56px;
   margin-bottom: 42px;
-  place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 14px;
-  color: #082318;
-  background: linear-gradient(145deg, #75edb9, #2ac184);
+  border-radius: 15px;
   box-shadow: 0 10px 28px rgba(42, 193, 132, 0.18);
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1;
+  object-fit: cover;
 }
 
 .auto-refresh .app-icon {
-  color: #e9f5ff;
-  background: linear-gradient(145deg, #5599ef, #2465bd);
   box-shadow: 0 10px 28px rgba(36, 101, 189, 0.22);
 }
 
@@ -285,6 +284,45 @@ p { margin: 0 0 14px; }
   font-size: 12px;
   font-weight: 650;
   letter-spacing: 0.04em;
+}
+
+.showcase-section { margin-top: 72px; }
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.showcase-item {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.2);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.showcase-item:hover {
+  border-color: rgba(82, 158, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.showcase-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+}
+
+.showcase-item figcaption {
+  padding: 11px 13px 12px;
+  border-top: 1px solid var(--border);
+  color: #a9b7b1;
+  font-size: 12px;
+  font-weight: 650;
 }
 
 .contact-section { margin-top: 72px; }
@@ -414,6 +452,15 @@ footer a { color: #9fafa8; }
   .card { min-height: 220px; }
   .app-icon { margin-bottom: 34px; }
   .section-note { display: none; }
+  .showcase-section { margin-top: 56px; }
+  .showcase-grid {
+    grid-template-columns: repeat(3, minmax(260px, 82vw));
+    overflow-x: auto;
+    padding: 0 16px 12px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+  .showcase-item { scroll-snap-align: start; }
   .contact-section { margin-top: 56px; }
 }
 
