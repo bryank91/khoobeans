@@ -4,31 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Khoobeans</title>
-  <meta name="description" content="Apps by Bryan — focused, privacy-respecting tools.">
+  <meta name="description" content="Thoughtful, privacy-respecting apps for Apple platforms, made by Bryan.">
+  <meta name="theme-color" content="#070b0e">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
   <main>
-    <h1><span class="wordmark">Khoobeans</span></h1>
-    <p class="subtitle">Apps by Bryan.</p>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Khoobeans home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Khoobeans</span>
+      </a>
+      <a class="topbar-link" href="mailto:bryank1991@hotmail.com">Get in touch</a>
+    </header>
 
-    <h2>Apps</h2>
+    <section class="hero">
+      <p class="eyebrow">Independent apps</p>
+      <h1><span class="wordmark">Small apps.<br>Thoughtfully made.</span></h1>
+      <p class="subtitle">Useful, focused software for Apple platforms—with privacy built in from the start.</p>
+    </section>
 
-    <a class="card" href="healthbeans/">
-      <div class="card-title">HealthBeans</div>
-      <div class="card-desc">Private, on-device wellness insights from your Apple Health data. iOS 17+.</div>
-    </a>
+    <section aria-labelledby="apps-heading">
+      <div class="section-heading">
+        <h2 id="apps-heading">Explore the apps</h2>
+        <span class="section-note">Designed by Bryan</span>
+      </div>
 
-    <a class="card" href="auto-refresh/">
-      <div class="card-title">Auto Refresh for Safari</div>
-      <div class="card-desc">Refresh the Safari tab you choose on a schedule, without affecting your other tabs. macOS 13+.</div>
-    </a>
+      <div class="app-grid">
+        <a class="card healthbeans" href="healthbeans/">
+          <span class="app-icon" aria-hidden="true">H</span>
+          <div class="card-title">HealthBeans</div>
+          <div class="card-desc">Private, on-device wellness insights from your Apple Health data.</div>
+          <div class="card-meta">iPhone · iOS 17+</div>
+        </a>
 
-    <h2>Contact</h2>
-    <div class="contact-block">
-      <div>Support, feedback, and inquiries:</div>
-      <div class="email"><a href="mailto:bryank1991@hotmail.com">bryank1991@hotmail.com</a></div>
-    </div>
+        <a class="card auto-refresh" href="auto-refresh/">
+          <span class="app-icon" aria-hidden="true">↻</span>
+          <div class="card-title">Auto Refresh</div>
+          <div class="card-desc">Refresh the Safari tab you choose on a schedule, without affecting your other tabs.</div>
+          <div class="card-meta">Safari · macOS 13+</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="contact-block">
+        <div class="muted">Support, feedback, or just want to say hello?</div>
+        <div class="email"><a href="mailto:bryank1991@hotmail.com">bryank1991@hotmail.com</a></div>
+      </div>
+    </section>
 
     <footer>
       <div class="row">

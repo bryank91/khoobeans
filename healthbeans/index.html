@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HealthBeans — Support</title>
   <meta name="description" content="Support, FAQ, and privacy information for HealthBeans — a privacy-first Apple Health insights app.">
+  <meta name="theme-color" content="#070b0e">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="support-page">
   <main>
-    <a class="back-link" href="../">← Khoobeans</a>
+    <header class="topbar">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"></span><span>Khoobeans</span></a>
+      <a class="back-link" href="../">← All apps</a>
+    </header>
 
     <h1><span class="wordmark">HealthBeans</span></h1>
     <p class="subtitle">Support</p>
@@ -30,7 +34,8 @@
 
     <h2>Frequently asked questions</h2>
 
-    <div class="faq-item">
+    <div class="faq-list">
+      <div class="faq-item">
       <div class="faq-q">How do I get an API key?</div>
       <p class="faq-a">
         HealthBeans uses your own OpenRouter or MiniMax API key — yours, not ours.
@@ -38,30 +43,31 @@
         or <a href="https://MiniMax.io/" target="_blank" rel="noopener noreferrer">MiniMax.io</a>,
         create a key, and paste it into the Configure tab in HealthBeans. Keys are stored only in your iOS Keychain.
       </p>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
       <div class="faq-q">Does HealthBeans share my raw health data?</div>
       <p class="faq-a">
         No. Raw HealthKit samples never leave your iPhone. Only the daily and hourly aggregates you approve are
         sent to your selected AI provider.
       </p>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
       <div class="faq-q">How do I delete my local data?</div>
       <p class="faq-a">
         Open HealthBeans → Settings → <strong>Delete local data</strong>. This clears your stored AI keys and
         preferences. Your data in Apple Health is not affected.
       </p>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
       <div class="faq-q">Is HealthBeans a medical device?</div>
       <p class="faq-a">
         No. HealthBeans provides general wellness information only and does not diagnose or treat any condition.
         Always consult a qualified clinician for medical decisions.
       </p>
+      </div>
     </div>
 
     <h2>Privacy summary</h2>
