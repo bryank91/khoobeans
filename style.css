@@ -14,6 +14,11 @@
 
 * { box-sizing: border-box; }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   min-height: 100%;
   background: var(--bg);
@@ -290,8 +295,9 @@ p { margin: 0 0 14px; }
 
 .showcase-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 240px));
   gap: 12px;
+  justify-content: center;
 }
 
 .showcase-item {
@@ -312,7 +318,6 @@ p { margin: 0 0 14px; }
 .showcase-item img {
   display: block;
   width: 100%;
-  height: auto;
   aspect-ratio: 8 / 5;
   object-fit: cover;
 }
@@ -454,7 +459,8 @@ footer a { color: #9fafa8; }
   .section-note { display: none; }
   .showcase-section { margin-top: 56px; }
   .showcase-grid {
-    grid-template-columns: repeat(3, minmax(260px, 82vw));
+    grid-template-columns: repeat(3, 200px);
+    justify-content: start;
     overflow-x: auto;
     padding: 0 16px 12px 0;
     scroll-snap-type: x mandatory;
