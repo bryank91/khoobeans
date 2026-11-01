@@ -6,4 +6,4 @@ Support site for apps by Bryan.
 - [HealthBeans support](https://bryank91.github.io/khoobeans/healthbeans/)
 - [Auto Refresh for Safari support](https://bryank91.github.io/khoobeans/auto-refresh/)
 
-Contact: bryank1991@hotmail.com
+Contact: bryan@khooserver.com
